@@ -1,6 +1,6 @@
 def tabela(cur):
     if cur.description is None:
-        printf(f"{cur.rowcount} linhas(s) afetada(s).")
+        print(f"{cur.rowcount} linhas(s) afetada(s).")
         return
 
     colunas = [d[0] for d in cur.description]
